@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CodTracker.ProfilePage">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column"
+            JustifyContent="Start" 
+            Margin="40,0">
+            <Label x:Name ="PlatformLabel" Text="Platform" FlexLayout.AlignSelf="Center"></Label>
+            <Label x:Name ="UsernameLabel" Text="Username" FontSize="Title" FlexLayout.AlignSelf="Center" FontAttributes="Bold"></Label>
+            <Picker x:Name ="ModePicker" Title="Select a Mode..." BackgroundColor="WhiteSmoke" PropertyChanged="ModePicker_PropertyChanged"/>
+            <ScrollView Orientation="Vertical" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                <FlexLayout x:Name="DataLayout" Direction="Column">
+
+                </FlexLayout>
+
+            </ScrollView>
+
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

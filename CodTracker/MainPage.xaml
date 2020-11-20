@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CodTracker.MainPage">
+    
+    <FlexLayout Direction="Column"
+            JustifyContent="Center" 
+            Margin="40,0">
+        <Picker x:Name ="PlatformPicker" Title="Select a Platform..." PropertyChanged="PlatformPicker_PropertyChanged" BackgroundColor="WhiteSmoke"/>
+        <Picker x:Name ="ModePicker" Title="Select a Mode..." BackgroundColor="WhiteSmoke"/>
+        <Entry x:Name ="Entry" Placeholder=""  BackgroundColor="WhiteSmoke"></Entry>
+        <Button Text="Search"  FlexLayout.AlignSelf="Center" Clicked="Handle_ClickedSearch"/>
+    </FlexLayout>
+</ContentPage>
